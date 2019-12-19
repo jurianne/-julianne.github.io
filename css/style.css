@@ -1,0 +1,384 @@
+@charset "utf-8";
+
+/*base design*/
+body{
+  margin:0;
+  padding:0;
+  background-color:#f5f5f5;
+  color: #333333;
+  font-size: 15px;
+  line-height: 2;
+  
+  font-family: 'Jost';
+}
+
+p,h1,h2,h3,h4,h5,h6{
+  margin-top: 0;
+  
+}
+
+img{
+  vertical-align: bottom;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+/*link design*/
+a{
+  color: #3583aa;
+  text-decoration: none;
+}
+a:visited{
+  color: #788d98;
+  text-decoration: underline;
+}
+
+/*header*/
+header{
+  width: 100%;
+  /* height: 100px; */
+  margin: 0 auto;
+  /* margin-bottom: 50px; */
+}
+
+.logo{
+  /* float: left; */
+  margin-top: 60px;
+  margin-left: 80px;
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+  
+  .logo #logo {
+    font-size: 24px;
+    font-family: 'Jost';
+    font-weight: 500;
+    color: #0A00FF;
+  }
+
+
+.global-nav{
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* float: right; */
+  /* margin-top:60px; */
+} 
+.global-nav li{
+  float: left;
+  margin: 0 30px;
+  font-size: 24px;
+  list-style: none;
+} 
+
+.global-nav li a{
+  color: #0A00FF;/*瑠璃色 #1e50a2*/
+}
+
+.global-nav li a:hover{
+  border-bottom: 2px solid #0A00FF;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+
+/*contents area*/
+.wrap{
+  clear: both;
+}
+
+.content{
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+}
+
+
+
+
+/*footer area*/
+footer{
+  text-align: center;
+  color: #0A00FF;
+  padding: 20px 100px;
+  background-color: #767671;
+}
+
+footer small{
+  font-size: 24px;
+}
+
+
+/*top page*/
+#index footer{
+  width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  
+  margin-top: 150px;
+  margin-bottom: 80px;
+  background-color: transparent;
+}
+
+/*slideshow area*/
+#slideshow {
+  position: relative;
+  width:  960px;
+  height: 500px;
+  margin-left: 80px;
+  margin-bottom: 100px;
+}
+
+#slideshow p {
+  position: absolute;
+  top:  0;
+  left: 0;
+  z-index: 8;
+  opacity: 0.0;
+  background-color: white;
+  margin: 0;
+  height: 300px;
+}
+
+#slideshow p.active {
+  z-index: 10;
+  opacity: 1.0;
+}
+
+#slideshow p.last-active {
+  z-index: 9;
+}
+
+#slideshow p img {
+  width: 960px;
+  height: 600px;
+  display: block;
+  border: 0;
+  margin-bottom: 10px;
+}
+
+
+/*work-list*/
+.clearfix:after{
+  content:"";
+  display: block;
+  clear: both;
+}
+
+
+#index .work-list li{
+  float:left;
+  list-style: none;
+  margin: 0 80px 40px 0px;
+}
+
+#index .work-list li:ntn-child(2n){
+  margin-right: 0;
+  
+}
+.works{
+  margin-top: 200px;
+  margin-left: 120px;
+  
+}
+
+.work-list{
+  width: 960px;
+  height: auto;
+ 
+}
+
+
+.work {
+	width:			400px;
+	height:			250px;
+	overflow:		hidden;
+/*	margin:			50px 40px 10px 16px;*/
+	position:		relative;	/* 相対位置指定 */
+}
+.work img{
+  width: 400px;
+  height: auto;
+  
+}
+
+.work .caption {
+	font-size:		130%;
+	text-align: 		center;
+	padding-top:		100px;
+	color:			#fff;
+}
+.work .mask {
+	width:			100%;
+	height:			100%;
+	position:		absolute;	/* 絶対位置指定 */
+	top:			0;
+	left:			0;
+	opacity:		0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,255,0.4);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:		all 0.2s ease;
+}
+.work:hover .mask {
+	opacity:		1;	/* マスクを表示する */
+}
+
+
+
+/*for responsive design*/
+@media screen and (max-width: 600px){
+/*  画面サイズが600px以下*/
+  body{
+    font-size:5vw;
+  }
+  
+
+  header{
+   width: auto;
+    height; 100px;
+    margin: 0 5%;
+    
+  }
+  .logo{
+    margin-top: 60px;
+    float: left;
+    margin-left: 10px;
+  }
+  
+  .logo #logo {
+    font-size: 5vw;
+    font-family: 'Jost';
+    font-weight: 500;
+    color: #0A00FF;
+  }
+ 
+  
+  .global-nav{
+    float: right;
+    margin-top: 60px;
+    
+  }
+  
+  .global-nav li{
+  float: left;
+  font-size: 5vw;
+  list-style: none;
+} 
+
+
+  #wrap{
+/*    margin-top: 50px;*/
+/*    padding: 35px 0 0;*/
+  }
+  
+  .content{
+    width: 100%;
+  }
+  
+ /*slideshow area*/
+#slideshow {
+  position: relative;
+  width:  100%;
+  height: auto;
+  margin-left:10px;
+  margin-bottom: 100px;
+}
+
+#slideshow p {
+  position: absolute;
+  top:  0;
+  left: 0;
+  z-index: 8;
+  opacity: 0.0;
+  background-color: white;
+  margin: 0;
+  height: 300px;
+}
+
+#slideshow p.active {
+  z-index: 10;
+  opacity: 1.0;
+}
+
+#slideshow p.last-active {
+  z-index: 9;
+}
+
+#slideshow p img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 0;
+  margin-bottom: 200px;
+}
+
+
+  
+/*  作品一覧*/
+  
+  #index .work-list li{
+  float:left;
+  list-style: none;
+  margin: 0 80px 40px 0px;
+}
+  
+/*
+#index .work-list li: ntn-child(2n){
+  margin-right: 0;
+  
+}
+*/
+.works{
+/*  margin-top: 200px;*/
+/*  margin-left: 120px;*/
+  margin: 0 5%;
+}
+
+.work-list{
+  width: 100%;
+  height: auto;
+ 
+}
+
+
+.work {
+	width:			100%;
+	height:			auto;
+	overflow:		hidden;
+/*	margin:			50px 40px 10px 16px;*/
+	position:		relative;	/* 相対位置指定 */
+}
+.work img{
+  width: 100%;
+  height: auto;
+  
+}
+
+.work .caption {
+	font-size:		130%;
+	text-align: 		center;
+	padding-top:		100px;
+	color:			#fff;
+}
+.work .mask {
+	width:			100%;
+	height:			100%;
+	position:		absolute;	/* 絶対位置指定 */
+	top:			0;
+	left:			0;
+	opacity:		0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,255,0.4);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:		all 0.2s ease;
+}
+.work:hover .mask {
+	opacity:		1;	/* マスクを表示する */
+}
+
+  
+  }
+
+
