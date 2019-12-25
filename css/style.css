@@ -226,6 +226,19 @@ footer small{
 	opacity:		1;	/* マスクを表示する */
 }
 
+.grid{
+  padding-top: 80px;
+  width: 100%;
+  
+  
+}
+
+.grid-item{
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
 
 
 /*for responsive design*/
@@ -238,7 +251,7 @@ footer small{
 
   header{
    width: auto;
-    height; 100px;
+    height: 100px;
     margin: 0 5%;
     
   }
