@@ -229,18 +229,21 @@ footer small{
 .grid{
   padding-top: 80px;
   width:  960px;
-  
-  
-  
 }
+
+.grid-item img{
+  width: inherit;
+}
+
 
 .grid-item{
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 35px;
   margin-top: 30px;
+  width: 460px;
 }
 
-grid-item::nth-child(odd) {
+grid-item:nth-child(odd) {
   margin-left: 0;
 }
 
