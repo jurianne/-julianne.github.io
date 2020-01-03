@@ -527,3 +527,11 @@ a.card:hover{
   width: 1px;
   height: 1px;
 }
+
+
+/* workpage layout */
+body .main-image{
+  background-image: url("/-julianne.github.io/images/COLORISE/COLORISE_2.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
