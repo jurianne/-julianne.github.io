@@ -535,3 +535,95 @@ body .main-image{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.l-description{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  padding: 1em 0;
+  background-color: #f5f5f5;
+  /* box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, .1); */
+}
+.l-description {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  display: block;
+  width: 100%;
+  /* background-color: #eee; */
+}
+
+.l-description .works-title{
+  margin-top: 1.2em;
+  margin-bottom: 0.3em;
+  color: #0a00ff;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.25em;
+}
+
+.l-description .add-info{
+  text-align: center;
+  width: 80%;
+  font-size:0.3em;
+  color: #0000004b;
+  display: inline;
+}
+
+.description-text {
+  display: block;
+  margin-top: 12px;
+  text-align: justify;
+  font-size: .7em;
+  line-height: 1.5;
+}
+
+.description-text > p:first-of-type {
+  margin-bottom: 12px;
+}
+
+.description-text > div:last-of-type {
+  margin-top: 12px;
+}
+
+.description-text-en{
+  margin-bottom: 1.0em;
+}
+
+.description-text-jp{
+  margin-bottom: 1.0em;
+}
+
+.description-contents{
+  margin-bottom:0.8em;
+}
+
+.credit{
+  font-size: 0.7em;
+  margin-bottom: 0.8em;
+}
+
+.credit .credit-title{
+  color: #0a00ff;
+  font-size:0.7em;
+  line-height: 1.5;
+} 
+.publication{
+  font-size: 0.7em;
+}
+
+.publication .publication-title{
+  color: #0a00ff;
+  font-size:0.7em;
+  line-height: 1.5;
+}
+.publication p{
+  margin-bottom: 0.5em;
+  line-height: 1.5em;
+}
+
+
