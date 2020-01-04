@@ -612,6 +612,18 @@ body .main-image{
   font-size:0.7em;
   line-height: 1.5;
 } 
+
+.skill{
+  font-size: 0.7em;
+  margin-bottom: 0.8em; 
+}
+
+.skill .skill-title{
+  color: #0a00ff;
+  font-size:0.7em;
+  line-height: 1.5;
+}
+
 .publication{
   font-size: 0.7em;
 }
@@ -627,3 +639,59 @@ body .main-image{
 }
 
 
+/* About Page */
+.l-bio{
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  display: block;
+  width: 100%;
+  margin-bottom:1.0em;
+}
+
+.l-bio-text{
+  display: block;
+  margin-top: 12px;
+  text-align: justify;
+  font-size: 0.8em;
+  line-height: 1.5;
+}
+
+.l-bio-text .l-bio-title{
+  color: #0a00ff;
+  font-size:1.0em;
+  line-height: 1.7em;
+  margin-bottom: 1.0em;
+}
+
+.experience-list{
+  font-size: 0.7em;
+  line-height: 1.2em;
+}
+
+.experience-list .experience-title{
+  color: #0a00ff;
+  font-size:1.0em;
+  line-height: 1.7em;
+  margin-bottom: 0.5em;
+}
+
+.experience-list .experience-item{
+  margin-bottom: 1.0em;
+  margin-left: 0.5em;
+  font-size: 0.7em;
+}
+
+.experience-list .date{
+
+}
+
+.experience-list small{
+  /* text-align: center; */
+  width: 80%;
+  font-size:0.2em;
+  color: #0000004b;
+  display: inline;
+}
