@@ -645,7 +645,7 @@ body .main-image{
   top: 0;
   right: 0;
   left: 0;
-  z-index: 100;
+  /* z-index: 100; */
   display: block;
   width: 100%;
   margin-bottom:1.0em;
@@ -681,7 +681,7 @@ body .main-image{
 .experience-list .experience-item{
   margin-bottom: 1.0em;
   margin-left: 0.5em;
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 
 .experience-list .date{
@@ -690,7 +690,7 @@ body .main-image{
 
 .experience-list small{
   /* text-align: center; */
-  width: 80%;
+  /* width: 80%; */
   font-size:0.2em;
   color: #0000004b;
   display: inline;
