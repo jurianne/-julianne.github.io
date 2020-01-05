@@ -40,3 +40,16 @@ $(function () {
 	});
 
 });
+
+  /* ==============================
+    Accordion
+  ============================== */
+  $(function () {
+    $('.js-hidden-item').hide();
+
+    $('.js-button').click(function () {
+      // イベントが発生した要素の次の要素
+	  $('.js-hidden-item').slideDown(300);
+	  $(this).hide();
+    });
+  });
