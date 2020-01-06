@@ -695,8 +695,8 @@ body .main-image{
 .l-bio-text{
   display: block;
   margin-top: 12px;
-  text-align: justify;
-  font-size: 0.8em;
+  /* text-align: justify; */
+  font-size: 1.0em;
   line-height: 1.5;
 }
 
@@ -708,7 +708,7 @@ body .main-image{
 }
 
 .experience-list{
-  font-size: 0.7em;
+  font-size: 1.0em;
   line-height: 1.2em;
 }
 
@@ -735,4 +735,31 @@ body .main-image{
   font-size:0.2em;
   color: #0000004b;
   display: inline;
+}
+
+@media screen and (min-width:768px) { 
+  /* For iPad */
+
+}
+
+@media screen and (min-width:1024px) { 
+  /* For PC */
+
+  .slideshow{
+    width: 960px;
+    height: 500px;
+    margin: 0 auto;
+  }
+
+  .slideshow-item {
+    position: absolute;
+    top: 3em;
+    display: inline-block;
+    width: 100%;
+    opacity: 0;
+  }
+
+  .l-section {
+    padding-top: 20em;
+  }
 }
