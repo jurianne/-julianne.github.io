@@ -158,6 +158,9 @@ img{
   vertical-align: bottom;
 }
 
+
+
+
 iframe{
   width: 100%;
   max-width: 100%;
@@ -325,7 +328,7 @@ iframe{
   max-width: 360px;
 }
 
-/* Grid */
+/* Top-page-Grid */
 .l-grid{
   overflow: hidden;
   margin: -10px;
@@ -571,11 +574,11 @@ a.card:hover{
 
 
 /* workpage layout */
-body .main-image{
+/* body .main-image{
   background-image: url("/-julianne.github.io/images/COLORISE/COLORISE_2.JPG");
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 /* .l-description{
   position: fixed;
@@ -587,6 +590,13 @@ body .main-image{
   background-color: #f5f5f5;
   box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, .1);
 } */
+
+.works-mainimage{
+  width: 100%;
+  position: relative;
+}
+
+
 .l-description {
   position: relative;
   top: 0;
@@ -621,6 +631,7 @@ body .main-image{
   /* text-align: justify; */
   font-size: 1em;
   line-height: 1.5;
+  margin-bottom: 3em;
 }
 
 .description-text > p:first-of-type {
@@ -642,6 +653,37 @@ body .main-image{
 .description-contents{
   margin-bottom:0.8em;
 }
+
+/* Work-page Grid  */
+.work-l-grid{
+  overflow: hidden;
+  margin: -10px;
+  width: auto;
+}
+
+.work-l-grid-item{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 1em;
+  /* border: 10px solid transparent; */
+}
+
+.work-l-grid-item.-video {
+  height: 0;
+  position: relative;
+  padding-bottom: 56.25%; /*アスペクト比16:9 = 9/16 * 100%*/
+}
+
+.work-l-grid-item.-video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
 
 .credit{
   font-size: .875em;
@@ -679,7 +721,49 @@ body .main-image{
   line-height: 1.5em;
 }
 
+.exhibition{
+  font-size: .875em;
+}
 
+.exhibition .exhibition-title{
+  color: #0a00ff;
+  font-size: 1em;
+  line-height: 1.5;
+}
+.exhibition p{
+  margin-bottom: 0.5em;
+  line-height: 1.5em;
+}
+
+.exhibition small{
+  margin-bottom: 0.5em;
+  line-height: 1.5em;
+  color: #0000004b;
+}
+
+.link{
+  font-size: .875em;
+}
+
+.link .link-title{
+  color: #0a00ff;
+  font-size: 1em;
+  line-height: 1.5;
+}
+.link p{
+  margin-bottom: 0.5em;
+  line-height: 1.5em;
+}
+
+.link a{
+  text-decoration: none;
+  color: #0a00ff;
+}
+.link a:hover{
+  color: #0000004b;
+}
+
+/* --------------- */
 /* About Page */
 .l-bio{
   position: relative;
@@ -756,10 +840,55 @@ body .main-image{
     top: 3em;
     display: inline-block;
     width: 100%;
+    height: auto;
     opacity: 0;
   }
+
+
+/* slideshow
+.slideshow{
+  position: relative;
+}
+
+.slideshow-item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  opacity: 0;
+}
+
+.slideshow-item.active{
+  z-index: 10;
+  opacity: 1.0;
+}
+
+.slideshow-item.last-active{
+  z-index: 9;
+}
+ */
+
 
   .l-section {
     padding-top: 20em;
   }
+
+  .l-grid{
+    overflow: hidden;
+    margin: -10px;
+    width: auto;
+    /* margin-left: 7.25em; */
+  }
+
+  .l-grid-item{
+    display: inline-block;
+    width: 385px;
+    margin-right: 1em;
+    /* border: 10px solid transparent; */
+  }
+
+
+
 }
